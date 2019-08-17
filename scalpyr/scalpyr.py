@@ -131,7 +131,7 @@ class Scalpyr(object):
             request_string += "{0}".format(req_id)
         elif req_args:
             request_string += "?"
-            for k, v in req_args.iteritems():
+            for k, v in req_args.items():
                 request_string += "{0}={1}&".format(k, v)
             if self.dev_key is not None:
                 request_string += "client_id={0}".format(self.dev_key)
